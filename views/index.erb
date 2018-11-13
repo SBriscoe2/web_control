@@ -1,5 +1,10 @@
-<h1>Do you want to know what my name is? <h1>
+<% if @cat_name %>
+<h1>My name is <%= @cat_name%> </h1>
+<% end %>
+<form action="/named-cat">
+    <input type="text" name="name">
+    <input type="submit" value="Submit">
+</form>
 <div style='border: 3px dashed red'>
 <img src='http://bit.ly/1eze8aE'>
 </div>
-<h1>My name is <%= @cat_name%> <h1>
